@@ -4,7 +4,7 @@ def get_path(fileName):
     is_correct = True
     while(is_correct):
 
-        path = "data/" + fileName
+        path = "data/" + fileName + ".csv"
         if os.path.exists(path):
             is_correct = False
             return path
@@ -13,9 +13,9 @@ def get_path(fileName):
 
 def check_Filename(fileName):
     while True:
-        path = "output/" + fileName
+        path = "output/" + fileName + ".xlsx"
         if os.path.exists(path):
             print("Name exist try changing FileName!\n\n") 
             fileName = input("Try again: ")
         else:
-            return fileName
+            return path

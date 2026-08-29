@@ -3,7 +3,7 @@ import openpyxl as xl
 from openpyxl.styles import Font
 
 def get_reports(filename : str, df_valid, df_invalid,df_summary):
-    path = "output/" + filename
+    path = filename
 
     with pd.ExcelWriter(path) as writer:
         df_valid.to_excel(writer, sheet_name = "Cleaned Data", index = False)
