@@ -1,12 +1,10 @@
 import os
 
 def get_path(fileName):
-    is_correct = True
-    while(is_correct):
+    while  true:
 
         path = "data/" + fileName + ".csv"
         if os.path.exists(path):
-            is_correct = False
             return path
         print("Make sure you have the file in data folder!") 
 

@@ -4,7 +4,7 @@ import cleaner as cl
 import reports as rp 
 import ui
 
-print("Copy the csv file into data folder then:\n\n")
+print("\n\nCopy the csv file into data folder then:\n\n")
 filename = input("Enter file name: ")
 
 data_path = ui.get_path(filename)

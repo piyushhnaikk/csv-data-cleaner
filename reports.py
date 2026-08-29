@@ -1,6 +1,6 @@
 import pandas as pd 
 import openpyxl as xl 
-from openpyxl.styles import Font
+from openpyxl.styles import Font, Alignment
 
 def get_reports(filename : str, df_valid, df_invalid,df_summary):
     path = filename
@@ -49,6 +49,8 @@ def df_summary(df, df_valid, df_invalid):
 def style_reports(sheet):
     for cell in sheet[1]:
         cell.font = Font(bold = True)
+
+    sheet.freeze_panes = "A2"
 
     for col in sheet.columns:
         largest = 0

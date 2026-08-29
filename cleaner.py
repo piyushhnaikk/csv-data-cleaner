@@ -13,7 +13,7 @@ def clean_data(df):
                         df_clean["OrderDate"],
                         errors = "coerce",
                         format = "mixed"
-                        )
+                        ).dt.date
     df_clean["Total"] = df_clean["UnitPrice"] * df_clean["Quantity"]
 
     return df_clean
