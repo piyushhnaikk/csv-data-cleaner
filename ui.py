@@ -1,7 +1,7 @@
 import os
 
 def get_path(fileName):
-    while  true:
+    while  True:
 
         path = "data/" + fileName + ".csv"
         if os.path.exists(path):
