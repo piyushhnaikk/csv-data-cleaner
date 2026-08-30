@@ -52,36 +52,35 @@ Each flagged record receives a `Reasons` field explaining the problem.
 
 ## Project Structure
 
-    csv_data_cleaner/
-    │
-    ├── data/
-    ├── output/
-    ├── main.py
-    ├── cleaner.py
-    ├── validator.py
-    ├── reports.py
-    ├── ui.py
-    ├── readme.md
-    ├── .gitignore
-    └── tests/
+csv_data_cleaner/
+├── data/
+├── output/
+├── main.py
+├── cleaner.py
+├── validator.py
+├── reports.py
+├── ui.py
+├── readme.md
+├── .gitignore
+└── tests/
 
 ## How It Works
 
-    CSV File
-       ↓
-    Load Data
-       ↓
-    Clean Data
-       ↓
-    Validate Records
-       ↓
-    Separate Valid / Flagged Data
-       ↓
-    Calculate Summary
-       ↓
-    Generate Excel Report
-       ↓
-    Format Excel Workbook
+CSV File
+↓
+Load Data
+↓
+Clean Data
+↓
+Validate Records
+↓
+Separate Valid / Flagged Data
+↓
+Calculate Summary
+↓
+Generate Excel Report
+↓
+Format Excel Workbook
 
 ## How to Run
 
@@ -89,19 +88,19 @@ Each flagged record receives a `Reasons` field explaining the problem.
 
 2. Run the program:
 
-       python main.py
+python main.py
 
 3. Enter the CSV filename without the `.csv` extension.
 
-   Example:
+Example:
 
-       orders_1500
+orders_1500
 
 4. Enter the desired Excel report filename without the `.xlsx` extension.
 
-   Example:
+Example:
 
-       orders_report
+orders_report
 
 The generated report will be placed inside the `output` folder.
 
@@ -143,6 +142,7 @@ Testing covered:
 - Automatic column sizing
 - Freeze panes
 - Filename handling
+- Invalid filename handling
 
 ## Future Improvements
 
