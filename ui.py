@@ -2,12 +2,11 @@ import os
 
 def get_path(fileName):
     while  True:
-
         path = "data/" + fileName + ".csv"
         if os.path.exists(path):
             return path
-        print("Make sure you have the file in data folder!") 
-
+        print("Make sure you have the file in data folder!")
+        fileName = input("Enter path again:  ") 
 
 def check_Filename(fileName):
     while True:
